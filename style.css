@@ -4,13 +4,13 @@
 }
 
 .logo-container {
-    width: 640px;
-    height: 10%;
-    min-height: 80px;
-    text-align: center;
-    font-family: Verdana,sans-serif;
-    font-size: larger;
-    padding-bottom: 20px;
+	width: 640px;
+	height: 10%;
+	min-height: 80px;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	font-size: larger;
+	padding-bottom: 20px;
 }
 
 .container {
@@ -95,13 +95,14 @@ table#listTable {
 	text-align: right;
 }
 
-.ip-key, .ip-value  {
-    /* background-color: azure; */
-    line-height: 24px;
-    padding: 0 8px;
-    border-radius: 5px;
-    text-shadow: none;
-    border: 1px solid #eee;
+.ip-key,
+.ip-value {
+	/* background-color: azure; */
+	line-height: 24px;
+	padding: 0 8px;
+	border-radius: 5px;
+	text-shadow: none;
+	border: 1px solid #eee;
 }
 
 .ip-value {
@@ -109,8 +110,25 @@ table#listTable {
 }
 
 .msg-box {
-    color: red;
-    font-style: italic;
-    font-weight: 200;
-    padding: 5px;
+	font-style: italic;
+	font-weight: 200;
+	font-family: sans-serif;
+	padding: 5px;
+}
+
+.red-color {
+	color: red;
+}
+
+.blue-color {
+	color: rgb(16, 132, 227);
+}
+
+.grey-color {
+	color: #777;
+}
+
+.msg-box p {
+	font-weight: 200;
+	font-size: small;
 }

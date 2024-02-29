@@ -9,8 +9,18 @@
 	<div class="logo-container center">
 		<div class="logo"><img src="../images/buddy_plus_128.png" alt="logo" width="56" height="56"></div>
 		<div class="logo-text">Buddy Plus!</div>
+		<div class="msg-box center">
+			<p>This is an extension which assists you while typing by replacing some predefined texts. This is a similar
+				implementation of the "Text Replacement" feature in iOS which is missing in Windows. This extension
+				should allow you to complete your mundane tasks quickly.</p>
+			<p>This extension will only work on input text fields and text-areas. This may ot work with WYSIWUG
+				editors.Go give this a try and explore new world of possibilities in your work flow.</p>
+			<p class="blue-color"><strong class="grey-color">Usage Example:</strong>
+				<br />See ya soon, <strong>tc</strong>! --> See ya soon, <strong>take care</strong>!
+				<br />Please approve by <strong>$today</strong>. --> Please approve by <strong>29-Feb-2024</strong>.
+			</p>
+		</div>
 	</div>
-
 	<div id="listTableDiv" class="container center">
 		<table id="listTable">
 			<thead>
@@ -26,13 +36,20 @@
 	</div>
 	<div class="input-container center">
 		<form id="ipForm">
-			<div id="msgBox" class="msg-box"></div>
+			<div id="msgBox" class="msg-box red-color "></div>
 			<input autofocus id="ipKey" class="ip-key" size="10" type="text" value="" placeholder="key phrase"
 				required />
 			<input id="ipValue" class="ip-value" size="30" type="text" value="" placeholder="replacement text"
 				required />
 			<input type="submit" id="addRow" value="AddRow" class="btn-style add-row">
 		</form>
+	</div>
+	<div class="input-container msg-box center blue-color">
+		<p><strong class="grey-color">Note:</strong> Only few special characters are allowed. Also the phrases should not start with number
+			or contain spaces in between.
+			<br /><br /><strong class="grey-color">Allowed Characters:</strong> !@#$%^&_+-.?
+			<br /><strong class="grey-color">Inbuilt-Function:</strong> $today $now $tstamp
+		</p>
 	</div>
 	<script src="options.js"></script>
 </body>
