@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="logo-container center">
+		<div class="logo"><img src="../images/buddy_plus_128.png" alt="logo" width="56" height="56"></div>
+		<div class="logo-text">Buddy Plus!</div>
+	</div>
+
+	<div id="listTableDiv" class="container center">
+		<table id="listTable">
+			<thead>
+				<tr>
+					<th>Phrase</th>
+					<th>Replace text</th>
+					<th>&nbsp;</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<div class="input-container center">
+		<form id="ipForm">
+			<div id="msgBox" class="msg-box"></div>
+			<input autofocus id="ipKey" class="ip-key" size="10" type="text" value="" placeholder="key phrase"
+				required />
+			<input id="ipValue" class="ip-value" size="30" type="text" value="" placeholder="replacement text"
+				required />
+			<input type="submit" id="addRow" value="AddRow" class="btn-style add-row">
+		</form>
+	</div>
+	<script src="options.js"></script>
+</body>
+
+</html>
